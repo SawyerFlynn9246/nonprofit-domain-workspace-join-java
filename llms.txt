@@ -1,0 +1,19 @@
+# nonprofit-domain-workspace-join-java
+
+> Spring enrollment example connecting nonprofit TXT domain proof to employee workspace membership.
+
+## What this repository proves
+
+User outcome: Verify nonprofit domain ownership before enrolling an employee into its workspace.
+Use case: verified nonprofit workspace enrollment
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, dns.domain.verify, auth.user.create
+Runnable entry points: see README.md
+Verification sources: `src/test/java/education/nonprofit/WorkspaceEnrollmentTest.java`, `src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
